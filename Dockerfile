@@ -3,7 +3,7 @@ FROM php:5-apache
 # Install nodejs, bower and grunt
 RUN \
   apt-get update && \
-  apt-get install -y cron wget supervisor python python-dev python-pip python-virtualenv libpng-dev git && \
+  apt-get install -y logrotate cron wget supervisor python python-dev python-pip python-virtualenv libpng-dev git && \
   rm -rf /var/lib/apt/lists/*
 RUN \
   cd /tmp && \
