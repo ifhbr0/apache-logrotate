@@ -1,0 +1,8 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=""
+
+# m h dom mon dow user  command
+*/5 *  *  *  *  root  logrotate -f /etc/logrotate.conf
+*/6 * * * * root /root/s3-upload.sh
+#
