@@ -1,7 +1,6 @@
 #!/bin/bash -e
 
 service postfix start && exec "$@"
-
 function stop_svc {
     service postfix stop
     exit
