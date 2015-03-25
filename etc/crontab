@@ -3,5 +3,5 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 MAILTO=""
 
 # m h dom mon dow user  command
-0 0 * * * root /root/s3-upload.sh
+0 0 * * * root /usr/sbin/logrotate -f /etc/logrotate.conf
 #

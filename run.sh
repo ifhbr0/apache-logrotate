@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-service postfix start && service cron start && exec "$@" 
+service postfix start && service cron start && service ssh start && exec "$@" 
 function stop_svc {
     service postfix stop
     exit
